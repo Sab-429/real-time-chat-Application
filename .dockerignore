@@ -1,0 +1,20 @@
+# Keep secrets and local state out of the build context / image.
+.env
+.env.*
+*.log
+
+# VCS and local tooling.
+.git
+.gitignore
+
+# Build output and test scratch space.
+dist/
+bin/
+tmp/
+*.exe
+*.test
+*.out
+
+# Deploy assets are not needed inside the image.
+deployments/
+README.md
